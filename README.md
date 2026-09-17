@@ -36,4 +36,4 @@ El proyecto incluye un panel de control interactivo desplegado en la nube para q
 * **Módulo 1:** Simulador interactivo de demanda mensual basado en variables históricas.
 * **Módulo 2:** Visualizador de métricas de segmentación de clientes y alertas comerciales.
 
-🔗 **Enlace a la aplicación en vivo:** [Inserta aquí tu enlace de Streamlit, ej: https://tudominio.streamlit.app]
+🔗 **Enlace a la aplicación en vivo:** https://ecommercedemandprediction-4vrvv3zkznrbcgakbextde.streamlit.app/
