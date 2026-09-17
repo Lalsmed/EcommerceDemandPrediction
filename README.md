@@ -18,3 +18,9 @@ Desarrollar un modelo de Machine Learning basado en Python para predecir las ven
 
 ## 📑Análisis RFM
 Ademas de la predicción de demanda, el proyecto incluye una segmentación de clientes mediante ANÁLISIS RFM (Recencia, Frecuencia, Monetario) para identificar perfiles VIP y clientes en riesgo de abandono, permitiendo optimizar estrategias de retención comercial.
+
+## 🌐Web App Interactiva (Streamlit)
+**¿Que hacer en la App?**
+* **Visualizador KPIs clave:** Métricas generales de ventas y segmentación de clientes.
+* **Simulador de demanda:** Una herramienta interactiva donde puedes ajustar el mes y las ventas previas para ver la predicción de la IA en tiempo real.
+**Enlace a la aplicación en vivo:** https://ecommercedemandprediction-4vrvv3zkznrbcgakbextde.streamlit.app/ 
