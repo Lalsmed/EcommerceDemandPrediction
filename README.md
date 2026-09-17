@@ -15,3 +15,5 @@ Desarrollar un modelo de Machine Learning basado en Python para predecir las ven
 2. **Análisis Exploratorio (EDA):** Identificación visual de los productos de mayor rotación e ingresos.
 3. **Ingeniería de Características:** Creación de variables temporales y de desfase (*Lag features*).
 4. **Modelado y Evaluación:** Entrenamiento de un algoritmo de *Random Forest* y medición del rendimiento con MAE.
+
+#Ademas de la predicción de demanda, el proyecto incluye una segmentación de clientes mediante ANÁLISIS RFM (Recencia, Frecuencia, Monetario) para identificar perfiles VIP y clientes en riesgo de abandono, permitiendo optimizar estrategias de retención comercial.
