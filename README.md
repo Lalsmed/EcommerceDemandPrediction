@@ -30,6 +30,11 @@ Desarrollar una solución integral de analítica avanzada y Machine Learning ori
 
 ---
 
+   ## Conclusión de Negocio
+   El modelo completo (35 features) es el elegido para producción. Aunque es más complejo de mantener, reduce los Falsos Positivos de 746 a 87, ahorrando costos operativos significativos sin sacrificar ni un solo fraude detectado (Recall = 1.0).
+
+   ——-
+
 ## 🌐 Web App Interactiva (Streamlit)
 El proyecto incluye un panel de control interactivo desplegado en la nube para que equipos de negocio o reclutadores puedan interactuar con la lógica del modelo en tiempo real.
 
