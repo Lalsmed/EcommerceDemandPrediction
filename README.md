@@ -1,44 +1,27 @@
-# 📈 E-commerce Demand Prediction & Customer Intelligence Hub
+# 🛡️ E-commerce Fraud Detection & Risk Analytics
+
+Sistema integral de Machine Learning y analítica de datos para la detección de fraude en transacciones de comercio electrónico. El proyecto resuelve el problema del desbalance de clases y la detección de patrones de comportamiento sospechosos (como el "Return Fraud"), optimizando la relación entre detección de fraude y experiencia del cliente.
 
 ## 🎯 Objetivo del Proyecto
-Desarrollar una solución integral de analítica avanzada y Machine Learning orientada al comercio electrónico. El sistema resuelve dos problemas comerciales críticos: la **predicción precisa de la demanda mensual** para optimizar el inventario y la **segmentación conductual de clientes (RFM y Cohortes)** para maximizar la retención y el valor de vida del cliente (LTV).
+Desarrollar un modelo predictivo que identifique transacciones fraudulentas en tiempo real, minimizando los Falsos Positivos (fricción al cliente) y maximizando el ahorro financiero mediante la evaluación de umbrales de negocio.
 
----
+## 🛠️ Stack Tecnológico
+- **Análisis y Modelado:** Python, Pandas, Scikit-Learn, XGBoost, LightGBM, SHAP
+- **Base de Datos:** SQLite (consultas SQL para EDA)
+- **Despliegue:** Streamlit Cloud (Dashboard interactivo en vivo)
 
-## 🛠️ Stack Tecnológico y Librerías
-* **Entorno de Desarrollo:** Google Colab (Cloud Platform)
-* **Manipulación y Limpieza de Datos:** Pandas, NumPy
-* **Visualización de Datos:** Matplotlib, Seaborn
-* **Machine Learning:** Scikit-Learn (Random Forest Regressor)
-* **Despliegue Web Interactivo:** Streamlit Cloud
+## 📊 Fases del Proyecto
+1. **Análisis Exploratorio (SQL):** Identificación de patrones en métodos de pago, dispositivos tóxicos y fraude de devoluciones.
+2. **Feature Engineering:** Creación de variables temporales (`tx_last_1h`, `hist_return_rate`) con prevención estricta de Data Leakage.
+3. **Modelado Predictivo:** Comparativa de Random Forest, XGBoost y LightGBM, manejando el desbalance con `scale_pos_weight`.
+4. **Evaluación de Negocio:** Matriz de costo-beneficio para definir el umbral de decisión óptimo (minimizando costo total operativo).
+5. **Explicabilidad:** Uso de SHAP para justificar cada decisión del modelo ante auditorías.
 
----
+## 💼 Conclusión de Negocio
+El modelo completo (35 features) fue seleccionado para producción. Aunque requiere mantener más variables, reduce los Falsos Positivos de 746 a 87, ahorrando costos operativos significativos sin sacrificar ni un solo fraude detectado (Recall = 1.0). El umbral óptimo de 0.1 generó un **ahorro neto simulado de $21,371 USD** en el conjunto de prueba.
 
-## 📊 Fases de Desarrollo del Pipeline Analítico
+## 🌐 Dashboard Interactivo en Vivo
+El proyecto incluye un panel de control ejecutivo desplegado en la nube para monitorear KPIs de fraude, tendencias y alertas tempranas.
 
-1. **Limpieza y Preparación de Datos:** 
-   * Depuración de más de 300,000 registros transaccionales reales.
-   * Tratamiento de valores nulos, corrección de tipos de datos y filtrado de devoluciones o cancelaciones anómalas.
-2. **Análisis Exploratorio (EDA):**
-   * Identificación visual de los productos de mayor rotación, estacionalidad de compras y comportamiento de ingresos por temporada.
-3. **Modelado Predictivo (Machine Learning):**
-   * Entrenamiento de un modelo de **Random Forest Regressor** para anticipar las ventas futuras y minimizar los costos de sobrestock y roturas de inventario.
-4. **Segmentación de Clientes (RFM):**
-   * Clasificación automatizada de compradores mediante **Recencia, Frecuencia y Monetario**, permitiendo identificar perfiles VIP y clientes en riesgo de abandono.
-5. **Análisis de Cohortes y Retención:**
-   * Medición de la lealtad del cliente a lo largo del tiempo, evaluando las tasas de retención mes a mes por grupos de adquisición.
-
----
-
-   ## Conclusión de Negocio
-   El modelo completo (35 features) es el elegido para producción. Aunque es más complejo de mantener, reduce los Falsos Positivos de 746 a 87, ahorrando costos operativos significativos sin sacrificar ni un solo fraude detectado (Recall = 1.0).
-
-   ——-
-
-## 🌐 Web App Interactiva (Streamlit)
-El proyecto incluye un panel de control interactivo desplegado en la nube para que equipos de negocio o reclutadores puedan interactuar con la lógica del modelo en tiempo real.
-
-* **Módulo 1:** Simulador interactivo de demanda mensual basado en variables históricas.
-* **Módulo 2:** Visualizador de métricas de segmentación de clientes y alertas comerciales.
-
-🔗 **Enlace a la aplicación en vivo:** https://ecommercedemandprediction-4vrvv3zkznrbcgakbextde.streamlit.app/
+🔗 **[Ver Dashboard en Streamlit Cloud](https://ecommercedemandprediction-4vrvv3zkznrbcgakbextde.streamlit.app/)** 
+*(Nota: El nombre de la app de Streamlit mantiene el nombre antiguo, pero el contenido es el dashboard de fraude que construimos).*
